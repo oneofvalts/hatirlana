@@ -1,0 +1,48 @@
+\documentclass[a4paper, twocolumn]{memoir}
+
+\setulmarginsandblock{2cm}{2cm}{*}
+\setlrmarginsandblock{2cm}{2cm}{*}
+\checkandfixthelayout{}
+
+\usepackage[pdftex, pdfpagelabels, bookmarks, hyperindex, hyperfigures]{hyperref}
+
+\usepackage{tgpagella}
+\usepackage[T1]{fontenc}
+
+\usepackage[turkish]{babel}
+\usepackage{dirtytalk}
+\usepackage{lipsum}
+
+\author{
+  biri, ri\\
+  \texttt{biri@ornek.com}
+  \and
+  obürü, rü\\
+  \texttt{oburu@ornek.com}
+}
+\title{\textsc{hatirlana}\\\small sayı: \#}
+\date{gün ay yıl}
+
+\nouppercaseheads{}
+\setsecnumdepth{chapter}
+\settocdepth{subsection}
+
+\settowidth{\versewidth}{ortalama uzunlukta bir mısra}
+
+\begin{document}
+\maketitle
+\section{başlık}
+\lipsum[0-2]
+\poemtitle{şiir başlığı --- açıklama}
+\begin{verse}[\versewidth]
+  birinci mısra \\
+  ikinci mısra \\
+  üçüncü mısra \\
+  dördüncü mısra
+
+  beşinci mısra \\
+  altıncı mısra
+\end{verse}
+\section{başka bir başlık}
+\lipsum[3-6]
+\end{document}
