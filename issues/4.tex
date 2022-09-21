@@ -1,10 +1,10 @@
-\documentclass[a4paper, twocolumn]{memoir}
+\documentclass[a4paper, twocolumn, openright]{memoir}
 
 \setulmarginsandblock{2cm}{2cm}{*}
 \setlrmarginsandblock{2cm}{2cm}{*}
 \checkandfixthelayout{}
 
-\usepackage[pdftex, pdfpagelabels, bookmarks, hyperindex, hyperfigures]{hyperref}
+\usepackage[pdftex, pdfpagelabels, bookmarks, hyperindex, hyperfigures, colorlinks]{hyperref}
 
 \usepackage{tgpagella}
 \usepackage[T1]{fontenc}
@@ -12,24 +12,7 @@
 \usepackage[turkish]{babel}
 \usepackage{dirtytalk}
 
-\author{
-  uyu, abdullah\\
-  \texttt{oneofvalts@sdf.org}
-  \and
-  uyu, bayram\\
-  \texttt{m.bayramuyu@gmail.com}
-  \and
-  uyu, durmus\\
-  \texttt{durmusuyu@gmail.com}
-  \and
-  uyu, arife\\
-  \texttt{arifeuyu@gmail.com}
-  \and
-  yüksel, numan ebubekir\\
-  \texttt{num.yuksel@gmail.com}
-}
-\title{\textsc{hatirlana}\\\small sayı: 4}
-\date{28 nisan 2021}
+\usepackage{needspace}
 
 \nouppercaseheads{}
 \setsecnumdepth{chapter}
@@ -37,7 +20,12 @@
 \settowidth{\versewidth}{param bahçe uydular ordularla geçti}
 
 \begin{document}
-\maketitle
+\thispagestyle{plain}
+\noindent
+{\HUGE\textsc{hatirlana}\\\small{}sayı: 4\\28 nisan 2021}\\\\
+{\small{}abdullah uyu\\\texttt{oneofvalts@sdf.org}}
+\bigskip
+\poemtitle{çağırdılar --- bir taze yolculuk}
 \begin{verse}[\versewidth]
 \itshape{}
 çağırdılar gittim, çağırdılar gittim\\
@@ -139,6 +127,7 @@ teknik talimatlar için \url{http://anonradio.net/openmic/} ve
 \section{gopher}
 \texttt{attaque-cinq.com} artık port \texttt{70}'den bir gopherhole
 sunuyor. işde, ascii art başlığı, açıklamasıyla root menusu:
+\needspace{22\baselineskip}
 \begin{verbatim}
 a needle &          a'
     a thread by    aa
