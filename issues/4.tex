@@ -1,10 +1,15 @@
-\documentclass[a4paper, twocolumn, openright]{memoir}
+\documentclass[9pt, a5paper, twocolumn, openright]{memoir}
 
-\setulmarginsandblock{2cm}{2cm}{*}
-\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{4em}{4em}{*}
+\setlrmarginsandblock{2em}{2em}{*}
 \checkandfixthelayout{}
 
-\usepackage[pdftex, pdfpagelabels, bookmarks, hyperindex, hyperfigures, colorlinks]{hyperref}
+\usepackage[pdftex,
+pdfpagelabels,
+bookmarks,
+hyperindex,
+hyperfigures,
+colorlinks]{hyperref}
 
 \usepackage{tgpagella}
 \usepackage[T1]{fontenc}
@@ -13,12 +18,16 @@
 
 \usepackage{dirtytalk}
 
+\usepackage{float}
 \usepackage{needspace}
 
 \nouppercaseheads{}
 \setsecnumdepth{chapter}
 
-\settowidth{\versewidth}{param bahçe uydular ordularla geçti}
+\addto\captionsturkish{\renewcommand{\figurename}{şekil}}
+\counterwithout{figure}{section}
+
+\settowidth{\versewidth}{param bahçe uydular ordularla geçti günler}
 
 \begin{document}
 \thispagestyle{plain}
@@ -27,22 +36,23 @@
 {\small{}abdullah uyu\\\texttt{oneofvalts@sdf.org}}
 \bigskip
 \poemtitle{çağırdılar --- bir taze yolculuk}
+\needspace{9\baselineskip}
 \begin{verse}[\versewidth]
-\itshape{}
-çağırdılar gittim, çağırdılar gittim\\
-bazı sağdan bazı soldan.\\
-bazen elden bazen koldan ağrılarla\\
-sanrıları izledik.\\
-``bu bağırmalar, bu bağırmalar. nereye?'' sordum.\\
-anlaşılan küçük aklım boşa yordum.\\
-bu çok aşikar da, şaşırıyor muyum,\\
-yoksa bahşedildi mi bana bu saklı?\\
-yoksa bunları hiç tanımıyor muyum?\\
+  \itshape{}
+  çağırdılar gittim, çağırdılar gittim\\
+  bazı sağdan bazı soldan.\\
+  bazen elden bazen koldan ağrılarla\\
+  sanrıları izledik.\\
+  ``bu bağırmalar, bu bağırmalar. nereye?'' sordum.\\
+  anlaşılan küçük aklım boşa yordum.\\
+  bu çok aşikar da, şaşırıyor muyum,\\
+  yoksa bahşedildi mi bana bu saklı?\\
+  yoksa bunları hiç tanımıyor muyum?\\
 \end{verse}
 \section{supper dimensional fortress: a bbs}
 sdf shell'inde {\ttfamily `bbs'} komutu var ve çalışdırıldığında size şu
 çıkdıyı veriyor: {\ttfamily `BBS  Documentary   DVD  set  (limited signed
-and  numbered edition  for SDF users!) [...]'}. bu ipucuyla youtube'yi
+  and  numbered edition  for SDF users!) [...]'}. bu ipucuyla youtube'yi
 taradım, anlaşılan birisi bu çok parçalı uzun belgesi birleşdirmiş ve
 yüklemiş, aşağı yukarı beş saat. bulduğum gece bayağı heyecanlandım,
 yaklaşık bir saatini izledim, uykum geldi yatdım. fakat gerçekden,
@@ -55,14 +65,15 @@ hatta, bu nasıl oluyor, ona da bir yandan şaşırmıyor değilim. sonuçda
 ben, bugün tekrar bbs kullanmaya başlamış bir sdf kullanıcısı değilim,
 gerçekden sonradan bir eklentiyim ve, adeta bir kitap okur gibi, bir film
 izler gibi sdf ve bbs'yi yaşıyorum.
+\needspace{6\baselineskip}
 \begin{verse}[\versewidth]
-\itshape{}
-önceleri bana hoş kokular gösderdiler.\\
-sonra hep birlikde pest sesler dinledik.\\
-andan biçare bizler, acımasız nağmelere inledik.\\
-biraz olsun sakinleşip durunca,\\
-``yol.'' dediler, devam etdik,\\
-sanrıları izledik.\\
+  \itshape{}
+  önceleri bana hoş kokular gösderdiler.\\
+  sonra hep birlikde pest sesler dinledik.\\
+  andan biçare bizler, acımasız nağmelere inledik.\\
+  biraz olsun sakinleşip durunca,\\
+  ``yol.'' dediler, devam etdik,\\
+  sanrıları izledik.\\
 \end{verse}
 ilginç olan, yaşayabiliyorum: bugün
 siz de, \texttt{telnet} programı mevcut herhangi bir bilgisayarın
@@ -75,10 +86,10 @@ yokken, uzakdan, temel hesap işlerimi gerçekleşdirmekdi. böyle bir
 hizmetden beklentilerim şunlar:
 \begin{itemize}
   \item bir metin düzenleyici, \texttt{vi} olmayan bir unix-benzeri
-    sistem olmadığını düşünürsek doğrudan elde edeceğim, varsa da zaten
-    bana uzak olsun.
+  sistem olmadığını düşünürsek doğrudan elde edeceğim, varsa da zaten
+  bana uzak olsun.
   \item bir dosya sistemi, mail, not, veya çalışdırılabilir dosya tutmak
-    için
+  için
   \item mümkünse bir mail servisi, mail okuyucu ve besteleyici
   \item belki bir \texttt{c} derleyici.
 \end{itemize}
@@ -89,15 +100,16 @@ bir kısmı kesişiyor olmalı galiba. işde asıl o merakımın nereden
 doğduğuyla ilgilenmekle bambaşka bir yere varacağız: halt and catch
 fire, cameron howe, mutiny. ilk neyden sebep keşfetdim bir türlü
 hatırlamıyorum, ama bir yerden sonra hepsi birlendi, yapboz tam oldu.
+\needspace{7\baselineskip}
 \begin{verse}[\versewidth]
-\itshape{}
-bir ara renklerden bahsetdiler,\\
-``bunlar,'' dediler, ``yaramaz şeylerdir.''\\
-``ancak ses olmasa, bi düşün, n'eylerdin?''\\
-senden bahsedemedim onlara,\\
-sanki yeri değil gibiydi. bu gösterdikleri de\\
-bir bakıma, hislerimin dibiydi.\\
-bildiler hep sevgimi sana deyip, susdum.\\
+  \itshape{}
+  bir ara renklerden bahsetdiler,\\
+  ``bunlar,'' dediler, ``yaramaz şeylerdir.''\\
+  ``ancak ses olmasa, bi düşün, n'eylerdin?''\\
+  senden bahsedemedim onlara,\\
+  sanki yeri değil gibiydi. bu gösterdikleri de\\
+  bir bakıma, hislerimin dibiydi.\\
+  bildiler hep sevgimi sana deyip, susdum.\\
 \end{verse}
 \subsection{anonradio}
 sdf'nin icecast radyosu, muazzam bir yer, sıradışı programlar ve en
@@ -112,53 +124,29 @@ sisteminizden bir dizine veya bilgisayarınızın bir ses cihazına koşup
 yayın yapabilirsiniz, siz yayın yaparken dizin kilitlenir, bir başkası
 koşamaz. tamamen açık mikrofon: hakikaten herhangi biri bağlanabilir,
 yukarıdaki prosedüre riayet etdiği takdirde.
+\needspace{8\baselineskip}
 \begin{verse}[\versewidth]
-\itshape{}
-ben böyle düşüncelere dalmışken\\
-çok yol gitmiş olmalıyız, her yer değişmiş,\\
-tek eski bildiklerim kalmış,\\
-bir an yabancı gibiydim.\\
-her biri birer laf etdi gene,\\
-yeniyi tanıtdılar. atılan her adımda adeta,\\
-pür-i pak kanıtdılar. ben müşahede etdim,\\
-sanrıları izledik.\\
+  \itshape{}
+  ben böyle düşüncelere dalmışken\\
+  çok yol gitmiş olmalıyız, her yer değişmiş,\\
+  tek eski bildiklerim kalmış,\\
+  bir an yabancı gibiydim.\\
+  her biri birer laf etdi gene,\\
+  yeniyi tanıtdılar. atılan her adımda adeta,\\
+  pür-i pak kanıtdılar. ben müşahede etdim,\\
+  sanrıları izledik.\\
 \end{verse}
 teknik talimatlar için \url{http://anonradio.net/openmic/} ve
 \url{http://sdf.org/?tutorials/anonradio-dj} adreslerini ziyaret ediniz.
 \section{gopher}
 \texttt{attaque-cinq.com} artık port \texttt{70}'den bir gopherhole
-sunuyor. işde, ascii art başlığı, açıklamasıyla root menusu:
-\needspace{22\baselineskip}
-\begin{verbatim}
-a needle &          a'
-    a thread by    aa
-                  aa'
-          aaa\    aa
-        aa   aa  aa'
-       aa    a'  'a'aaa\'  a/    a/
-      aa     ||  aa     |  a'    a'
-      aa     |   a'     |  a'    a'
-      aa     /   aa    /   a'    a
-        aaa_a     aa'aa     aaa_a'
-                               /a'
-                               aa'
-                          a'  aa
-                           \aaa
-
-you  have  reached  aby's  gopherhole.  you
-will find literary work, thematic journals,
-routes to other people's places.
-
-                  email: oneofvalts@sdf.org
-                             aby@tilde.club
-               sdf sip/voip extension: 2154
-\end{verbatim}
-ismini \texttt{`a needle \& a thread'} koydum. \texttt{usavurdu} isimli
-derlemedeki tüm şiirlerimi burada ayrı ayrı metin dosyası olarak
-sunuyorum. \texttt{lynx} ile \texttt{`lynx -assume-charset=UTF-8
-gopher://attaque-cinq.com'} komutunu çalışdırarak benim gopherholemi
-düzgünce görüntüleyebilirsiniz. diğer türlü türkçe karakterler yanlış
-gözükecek, diğerlerinin görüntüsünü bozacak.
+sunuyor. ismini \texttt{`a needle \& a thread'} koydum.
+\texttt{usavurdu} isimli derlemedeki tüm şiirlerimi burada ayrı ayrı
+metin dosyası olarak sunuyorum. \texttt{lynx} ile \texttt{`lynx
+  -assume-charset=UTF-8 gopher://attaque-cinq.com'} komutunu
+çalışdırarak benim gopherholemi düzgünce görüntüleyebilirsiniz.
+diğer türlü türkçe karakterler yanlış gözükecek, diğerlerinin
+görüntüsünü bozacak.
 
 hatırlana'ları gopherhole'me yüklüyeceğim, kaynak kodlar ve
 yazdırılabilir dökümanları. ayrıca yepye\~nile bir \TeX/\LaTeX{} öğrenmek
@@ -167,18 +155,18 @@ belgeleyeceğim. iyi tanımlı olması için spesifik, gerçekleşdirilebilir
 amaçlar yazmaya koyuldum. şimdilik şunları not almak kafi:
 \begin{itemize}
   \item Ti$k$Z\&PGF kitabının \say{A Picture of Karl's Students} bölümünü
-    okumak
+  okumak
   \item instagram'da \texttt{@}'a kadar paylaşdığım fotoğraflar için bir
-    fotoğraf albümü tasarlamak, dizgilemek
+  fotoğraf albümü tasarlamak, dizgilemek
   \item unix-benzeri sistemler, win ve macos'a \TeX{} dağıtımı kurmayı
-    öğrenmek
+  öğrenmek
   \item \LaTeX'in temellerini öğretmeyi öğrenmek, bunu yaparken özgün bir
-    eğitim kitapçığı yazmak
+  eğitim kitapçığı yazmak
   \item unix-benzeri sistemleri kullanmaya giriş kitapçığı yazmak,
-    dizgilemek ve basıp izzet hoşgör, izzet hoşgör ve hasan hoşgör'e
-    hediye etmek.
+  dizgilemek ve basıp izzet hoşgör, izzet hoşgör ve hasan hoşgör'e
+  hediye etmek.
   \item \texttt{asus dsl-ac51} ve \texttt{zyxel vmg3312 b-10a v2} modem
-    router'ler için dökümantasyon yazmak, dizmek.
+  router'ler için dökümantasyon yazmak, dizmek.
 \end{itemize}
 \section{the office ve tamburla tanışmak geride kaldı}
 gözyaşlarına gark olduk, bastık kahkahayı fakat, the office bitdi.
@@ -202,26 +190,56 @@ durmuş uyu'yla, bayram uyu tarafından. yemek yapma kaşığı, şimşir.
 bunun üzerine bayram uyu, daha, çok kaşık yapdı ve bu sonuncularda artık,
 boğazı yapmayı ve inceliğini bir seviyeye kadar çözdü. son yapdığı
 kaşıklar gerçekden çok güzel oldu.
+\needspace{19\baselineskip}
 \begin{verse}[\versewidth]
-\itshape{}
-``burası yolun sonudur'' dediler, ``istersen''.\\
-istemem dedim, ``gidelim''.\\
-çûn bilmiyordum vardığımız yeri, anlatdım:\\
-``belki bu, benim ayıbım,\\
-buradan geri dönecek yolu bilmiyorum,\\
-yol güzeldi fakat, şimdi ben kayıbım.''\\
-yine her birinin, gözünden birer yaş geldi.\\
-fakat benim gözüm yaşı, zannediyorum seldi,\\
-bana üzüldüler.\\
-``tamam,'' dediler, ``yürüyelim çeşmeye''.\\
-daha varmadan yanına çeşmenin,\\
-uzağından gördüm oluğunu.\\
-düşdün aklıma gine, başladı derdin\\
-ıslak gönlüm deşmeye. hepimiz biraz içdik\\
-o çeşmenin suyundan, gözüme bakdılar.\\
-``varalım,'' dediler, ``oturalım yanına'',\\
-aşikar etmedimse de onlara,\\
-demek sevgim ancak sana gizledim,\\
-sanrıları izledik.\\
+  \itshape{}
+  ``burası yolun sonudur'' dediler, ``istersen''.\\
+  istemem dedim, ``gidelim''.\\
+  çûn bilmiyordum vardığımız yeri, anlatdım:\\
+  ``belki bu, benim ayıbım,\\
+  buradan geri dönecek yolu bilmiyorum,\\
+  yol güzeldi fakat, şimdi ben kayıbım.''\\
+  yine her birinin, gözünden birer yaş geldi.\\
+  fakat benim gözüm yaşı, zannediyorum seldi,\\
+  bana üzüldüler.\\
+  ``tamam,'' dediler, ``yürüyelim çeşmeye''.\\
+  daha varmadan yanına çeşmenin,\\
+  uzağından gördüm oluğunu.\\
+  düşdün aklıma gine, başladı derdin\\
+  ıslak gönlüm deşmeye. hepimiz biraz içdik\\
+  o çeşmenin suyundan, gözüme bakdılar.\\
+  ``varalım,'' dediler, ``oturalım yanına'',\\
+  aşikar etmedimse de onlara,\\
+  demek sevgim ancak sana gizledim,\\
+  sanrıları izledik.\\
 \end{verse}
+\begin{figure}[H]
+\needspace{22\baselineskip}
+\begin{verbatim}
+a needle &          a'
+    a thread by    aa
+                  aa'
+          aaa\    aa
+        aa   aa  aa'
+       aa    a'  'a'aaa\'  a/    a/
+      aa     ||  aa     |  a'    a'
+      aa     |   a'     |  a'    a'
+      aa     /   aa    /   a'    a
+        aaa_a     aa'aa     aaa_a'
+                               /a'
+                               aa'
+                          a'  aa
+                           \aaa
+
+you have  reached aby's gopherhole.
+you   will   find  literary   work,
+thematic journals,  routes to other
+people's places.
+
+          email: oneofvalts@sdf.org
+                     aby@tilde.club
+       sdf sip/voip extension: 2154
+\end{verbatim}
+  \caption{root menu of attaque cinq gopherhole.}
+\end{figure}
 \end{document}

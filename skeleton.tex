@@ -1,10 +1,15 @@
-\documentclass[a4paper, twocolumn, openright]{memoir}
+\documentclass[9pt, a5paper, twocolumn, openright]{memoir}
 
-\setulmarginsandblock{2cm}{2cm}{*}
-\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{4em}{4em}{*}
+\setlrmarginsandblock{2em}{2em}{*}
 \checkandfixthelayout{}
 
-\usepackage[pdftex, pdfpagelabels, bookmarks, hyperindex, hyperfigures, colorlinks]{hyperref}
+\usepackage[pdftex,
+pdfpagelabels,
+bookmarks,
+hyperindex,
+hyperfigures,
+colorlinks]{hyperref}
 
 \usepackage{tgpagella}
 \usepackage[T1]{fontenc}
@@ -14,7 +19,11 @@
 \usepackage{dirtytalk}
 \usepackage{lipsum}
 
+\usepackage{float}
 \usepackage{needspace}
+
+\addto\captionsturkish{\renewcommand{\figurename}{şekil}}
+\counterwithout{figure}{section}
 
 \nouppercaseheads{}
 \setsecnumdepth{chapter}
